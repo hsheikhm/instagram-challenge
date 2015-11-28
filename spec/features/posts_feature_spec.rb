@@ -19,4 +19,12 @@ feature 'posts' do
     end
   end
 
+  context 'posting images' do
+    scenario 'prompts user to upload an image, then displays the new image' do
+      post_image
+      expect(page).to have_xpath("//img[contains(@src, 'test.jpg')]")
+      expect(current_path).to eq '/posts'
+    end
+  end
+
 end
