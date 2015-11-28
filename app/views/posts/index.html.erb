@@ -1,0 +1,9 @@
+<% if @posts.any? %>
+  <% @posts.each do |post| %>
+    <%= image_tag post.image.url(:medium) %>
+  <% end %>
+<% else %>
+  No images posted yet
+<% end %>
+
+<%= link_to "Make a Post", new_post_path %>
