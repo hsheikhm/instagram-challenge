@@ -19,12 +19,34 @@ feature 'posts' do
     end
   end
 
-  context "posting images" do
+  context "submitting a new post" do
+
+    before { visit "/posts"; click_link "Make a Post" }
+
     scenario "prompts user to upload an image, then displays the new image" do
       post_image
       expect(page).to have_xpath("//img[contains(@src, 'test.jpg')]")
       expect(current_path).to eq "/posts"
     end
-  end
 
+    scenario "is not possible if title is left blank" do
+      page.attach_file "Image", Rails.root + "spec/fixtures/files/test.jpg"
+      fill_in "Title", with: ""
+      click_button "Post Image"
+      expect(page).to have_content "Title can't be blank"
+    end
+
+    scenario "is not possible if image is left blank" do
+      fill_in "Title", with: "a blank image"
+      click_button "Post Image"
+      expect(page).to have_content "Image can't be blank"
+    end
+
+    scenario "is not possible if the file uploaded is not an image" do
+      page.attach_file "Image", Rails.root + "spec/fixtures/files/text.txt"
+      fill_in "Title", with: "a text file"
+      click_button "Post Image"
+      expect(page).to have_content "Image content type is invalid"
+    end
+  end
 end

@@ -10,8 +10,8 @@ class PostsController < ApplicationController
   end
 
   def create
-    Post.create(post_params)
-    redirect_to posts_path
+    @post = Post.new(post_params)
+    @post.save ? (redirect_to posts_path) : (render 'new')
   end
 
   def post_params
