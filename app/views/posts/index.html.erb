@@ -1,6 +1,7 @@
 <% if @posts.any? %>
   <% @posts.each do |post| %>
     <div><%= image_tag post.image.url(:medium) %>
+      <p><%= pluralize post.likes.count, 'like' %></p>
       <% if post.comments.any? %>
         <ul>
           <% post.comments.each do |comment| %>

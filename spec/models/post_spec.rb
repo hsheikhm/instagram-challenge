@@ -4,6 +4,8 @@ describe Post, type: :model do
 
   it { is_expected.to have_many :comments }
 
+  it { is_expected.to have_many :likes }
+
   it { is_expected.to have_attached_file(:image) }
 
   it { is_expected.to validate_attachment_presence(:image) }
