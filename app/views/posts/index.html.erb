@@ -1,6 +1,23 @@
 <% if @posts.any? %>
   <% @posts.each do |post| %>
-    <%= image_tag post.image.url(:medium) %>
+    <div><%= image_tag post.image.url(:medium) %>
+      <% if post.comments.any? %>
+        <ul>
+          <% post.comments.each do |comment| %>
+            <li>
+              <%= comment.thoughts %>
+            </li>
+          <% end %>
+        </ul>
+      <% else %>
+        <p>No comments.</p>
+      <% end %>
+      <%= form_for [post, @comment] do |f| %>
+      <%= f.label :thoughts %>
+      <%= f.text_area :thoughts %>
+      <%= f.submit "Leave Comment" %>
+      <% end %>
+    </div>
   <% end %>
 <% else %>
   No images posted yet

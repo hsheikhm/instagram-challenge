@@ -23,6 +23,10 @@ require 'web_helper'
 RSpec.configure do |config|
 
   config.include ActionDispatch::TestProcess
+
+  config.after(:all) do
+    FileUtils.rm_rf(Dir["#{Rails.root}/public/system/[^.]*"])
+  end
   # rspec-expectations config goes here. You can use an alternate
   # assertion/expectation library such as wrong or the stdlib/minitest
   # assertions if you prefer.
