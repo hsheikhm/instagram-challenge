@@ -1,7 +1,9 @@
 <% if @posts.any? %>
   <% @posts.each do |post| %>
+    <p><strong><%= post.title %></strong></p>
     <div><%= image_tag post.image.url(:medium) %>
-      <span class="likes_count"> <%= post.likes.count %> </span> <%= 'like'.pluralize(post.likes.count) %>
+      <br>
+    <span class="likes_count"> <%= post.likes.count %> </span> <%= 'like'.pluralize(post.likes.count) %>
       <% if post.comments.any? %>
         <ul>
           <% post.comments.each do |comment| %>
@@ -13,7 +15,9 @@
       <% else %>
         <p>No comments.</p>
       <% end %>
-      <%= link_to "Like", post_likes_path(post), class: 'likes-link' %>
+      <%= link_to post_likes_path(post), class: 'likes-link' do %>
+          <i class="glyphicon glyphicon-heart"></i>
+      <% end %>
       <%= form_for [post, @comment] do |f| %>
       <%= f.label :thoughts %>
       <%= f.text_area :thoughts %>
