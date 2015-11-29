@@ -1,7 +1,7 @@
 <% if @posts.any? %>
   <% @posts.each do |post| %>
     <div><%= image_tag post.image.url(:medium) %>
-      <p class="likes_count"><%= pluralize post.likes.count, 'like' %></p>
+      <span class="likes_count"> <%= post.likes.count %> </span> <%= 'like'.pluralize(post.likes.count) %>
       <% if post.comments.any? %>
         <ul>
           <% post.comments.each do |comment| %>
@@ -13,6 +13,7 @@
       <% else %>
         <p>No comments.</p>
       <% end %>
+      <%= link_to "Like", post_likes_path(post), class: 'likes-link' %>
       <%= form_for [post, @comment] do |f| %>
       <%= f.label :thoughts %>
       <%= f.text_area :thoughts %>
