@@ -24,9 +24,6 @@ RSpec.configure do |config|
 
   config.include ActionDispatch::TestProcess
 
-  config.after(:all) do
-    FileUtils.rm_rf(Dir["#{Rails.root}/public/system/[^.]*"])
-  end
 
   config.include Paperclip::Shoulda::Matchers
   # rspec-expectations config goes here. You can use an alternate
