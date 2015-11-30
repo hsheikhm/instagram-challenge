@@ -16,5 +16,5 @@ end
 
 def like_post
   visit "/posts"
-  click_on("likes-link")
+  find(".likes-link").click
 end
