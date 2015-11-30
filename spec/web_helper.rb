@@ -7,9 +7,14 @@ def post_image
 end
 
 def enter_comment
-  visit "posts"
+  visit "/posts"
   within("//div[contains(@src, 'test.jpg')]") do
     fill_in "Thoughts", with: "testing comments"
   end
   click_button "Leave Comment"
+end
+
+def like_post
+  visit "/posts"
+  click_on("likes-link")
 end
