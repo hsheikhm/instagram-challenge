@@ -1,6 +1,6 @@
 <% if @posts.any? %>
   <% @posts.each do |post| %>
-    <p><strong><%= post.title %></strong></p>
+    <p><strong><%= post.title %> by: <%= post.user.username %></strong></p>
     <div><%= image_tag post.image.url(:medium) %>
       <br>
     <span class="likes_count"> <%= post.likes.count %> </span> <%= 'like'.pluralize(post.likes.count) %>
