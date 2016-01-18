@@ -58,7 +58,7 @@ footer > a:visited {
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  margin: 30px auto 30px;
+  margin: 13px auto 30px;
   max-width: 935px;
   height: 618px;
   width: 100%;
@@ -69,13 +69,16 @@ footer > a:visited {
   -webkit-flex-grow: 1;
   -ms-flex-positive: 1;
   flex-grow: 1;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
   justify-content: center;
   max-width: 350px;
-  height: 618px;
+  height: 367px;
   float: right;
+  position: relative;
+  margin-right: 118px;
+  margin-top: -508px;
 }
 
 .login-container {
@@ -221,4 +224,19 @@ footer > a:visited {
 .sign-up-links:hover {
   color: white;
   text-decoration: none;
+}
+
+.iphone-section {
+  align-self: center;
+  background: url("//instagramstatic-a.akamaihd.net/h1/images/homepage/home-phones.png/26f8f9119be7.png");
+  flex-basis: 454px;
+  height: 618px;
+  width: 395px;
+  margin-left: 59px;
+}
+
+.iphone-image {
+  height: 422px;
+  margin-left: 135px;
+  margin-top: 97px;
 }
