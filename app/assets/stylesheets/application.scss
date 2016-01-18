@@ -11,6 +11,7 @@
   font-family: 'proxima-nova', 'Helvetica Neue', Arial, Helvetica, sans-serif;
   text-transform: uppercase;
   padding: 13px;
+  border: 1px solid #edeeee;
  }
 
  main {
@@ -28,6 +29,7 @@ footer {
   font-family: 'proxima-nova', 'Helvetica Neue', Arial, Helvetica, sans-serif;
   text-transform: uppercase;
   padding: 11px;
+  border: 1px solid #edeeee;
 }
 
 footer > a:link {
@@ -72,10 +74,14 @@ footer > a:visited {
   margin-top: -25px;
 }
 
-.sign-out-link {
+.new-post-link {
   color: #125688;
   float: left;
   padding-top: 3px;
+}
+
+.sign-out-link {
+  color: #125688;
 }
 
 .wrapper {
@@ -290,4 +296,53 @@ footer > a:visited {
   padding-left: 9px;
   padding-top: 8px;
   color: #125688;
+}
+
+.posts-section {
+  padding-top: 60px;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  margin: 0 auto;
+  max-width: 600px;
+  width: 100%;
+}
+
+.posts-div {
+  margin-bottom: 30px;
+}
+
+.each-post {
+  background-color: white;
+  border: 1px solid #edeeee;
+  border-radius: 3px;
+  margin-bottom: 60px;
+  margin-left: -1px;
+  margin-right: -1px;
+}
+
+.post-header {
+  height: 64px;
+  padding: 14px 20px;
+}
+
+.post-user-image {
+  flex-basis: 30px;
+  margin: -2px 530px -22px -5px;
+  flex-shrink: 0;
+  background-color: #fbfbfb;
+  border: 1px solid #cccfd0;
+  border-radius: 50%;
+  box-sizing: border-box;
+  height: 30px;
+  overflow: hidden;
+  width: 30px;
+}
+
+.post-user-username {
+  width: 249px;
+  height: 18px;
+  margin-left: -53px;
+  margin-top: -5px;
+  font-size: 12px;
 }
