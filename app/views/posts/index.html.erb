@@ -8,16 +8,23 @@
           <div class="post-user-username">
             <%= post.user.username %>
           </div>
+          <div class="post-timestamp">
+            <%= time_ago_in_words(post.time) + ' ago' %>
+          </div>
         </header>
+        <div class="post-image-div">
+          <%= image_tag post.image.url(:medium), class: 'post-image' %>
+        </div>
 
 
 
 
-        <p><strong><%= post.title %> by: <%= post.user.username %></strong></p>
-        <p><%= time_ago_in_words(post.time) + ' ago' %></p>
-        <div><%= image_tag post.image.url(:medium) %>
+
+
+        <div>
           <br>
         <span class="likes_count"> <%= post.likes.count %> </span> <%= 'like'.pluralize(post.likes.count) %>
+          <p><strong><%= post.title %></strong></p>
           <% if post.comments.any? %>
             <ul>
               <% post.comments.each do |comment| %>
@@ -38,8 +45,8 @@
           <%= f.submit "Leave Comment" %>
           <% end %>
         </div>
+        </article>
       <% end %>
     <% end %>
-      </article>
   </div>
 </section>
