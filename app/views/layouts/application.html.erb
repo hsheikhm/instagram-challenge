@@ -8,14 +8,23 @@
     <%= csrf_meta_tags %>
   </head>
   <body>
-    <% if user_signed_in? %>
-      <%= link_to "Sign out", destroy_user_session_path, method: :delete %>
-    <% else %>
-      <%= link_to "Sign in", new_user_session_path %>
-      <%= link_to "Sign up", new_user_registration_path %>
-    <% end %>
-    <%= notice %>
-    <%= alert %>
-    <%= yield %>
+    <div class="wrapper">
+      <header>
+        <% if user_signed_in? %>
+          <%= link_to "Sign out", destroy_user_session_path, method: :delete %>
+        <% else %>
+          <%= link_to "Sign in", new_user_session_path %>
+          <%= link_to "Sign up", new_user_registration_path %>
+        <% end %>
+      </header>
+      <main>
+        <%= notice %>
+        <%= alert %>
+        <%= yield %>
+      </main>
+      <footer>
+        © 2016 Instagram Clone by Hamza Sheikh, while at <a href="http://www.makersacademy.com/" target="_blank">Makers Academy</a> | <a href="https://github.com/hsheikhm" target="_blank">GitHub</a> | <a href="https://uk.linkedin.com/in/hamza-sheikh-b111a975" target="_blank">LinkedIn</a> | <a href="https://hsheikhm.wordpress.com/" target="_blank">Blog</a> |
+      </footer>
+    </div>
   </body>
 </html>

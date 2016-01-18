@@ -13,3 +13,46 @@
  */
  @import "bootstrap-sprockets";
  @import "bootstrap";
+
+ header {
+   height: 30px;
+   background-color: #fafafa !important;
+   text-align: center;
+   color: #125688;
+   font-weight: bold;
+   font-size: 11px;
+   font-family: 'proxima-nova', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+   text-transform: uppercase;
+   padding: 6px;
+ }
+
+ main {
+   flex:1;
+   background-color: #fafafa;
+ }
+
+ footer {
+   height: 30px;
+   background-color: #fafafa !important;
+   text-align: center;
+   color: #125688;
+   font-weight: bold;
+   font-size: 11px;
+   font-family: 'proxima-nova', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+   text-transform: uppercase;
+   padding: 6px;
+ }
+
+ footer > a:link {
+   color: #125688;
+ }
+
+ footer > a:visited {
+   color: #125688;
+ }
+
+ .wrapper {
+   height:100vh;
+   display:flex;
+   flex-direction: column;
+ }
