@@ -14,6 +14,7 @@ class PostsController < ApplicationController
   def create
     @post = Post.new(post_params)
     @post.user = current_user
+    @post.time = Time.now
     @post.save ? (redirect_to posts_path) : (render 'new')
   end
 

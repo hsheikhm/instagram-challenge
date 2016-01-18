@@ -2,6 +2,7 @@
   <% @posts.each do |post| %>
     <%= image_tag post.user.image.url(:thumb) %>
     <p><strong><%= post.title %> by: <%= post.user.username %></strong></p>
+    <p><%= time_ago_in_words(post.time) + ' ago' %></p>
     <div><%= image_tag post.image.url(:medium) %>
       <br>
     <span class="likes_count"> <%= post.likes.count %> </span> <%= 'like'.pluralize(post.likes.count) %>
