@@ -10,7 +10,7 @@
   font-size: 11px;
   font-family: 'proxima-nova', 'Helvetica Neue', Arial, Helvetica, sans-serif;
   text-transform: uppercase;
-  padding: 6px;
+  padding: 13px;
  }
 
  main {
@@ -27,7 +27,7 @@ footer {
   font-size: 11px;
   font-family: 'proxima-nova', 'Helvetica Neue', Arial, Helvetica, sans-serif;
   text-transform: uppercase;
-  padding: 6px;
+  padding: 0px;
 }
 
 footer > a:link {
@@ -239,4 +239,15 @@ footer > a:visited {
   height: 422px;
   margin-left: 135px;
   margin-top: 97px;
+}
+
+.main-sign-up {
+  background-color: #4090db;
+}
+
+.profile-image-label {
+  font-size: 13px;
+  padding-left: 9px;
+  padding-top: 8px;
+  color: #125688;
 }
