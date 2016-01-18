@@ -23,5 +23,11 @@
           <% end %>
       </div>
     </div>
+    <div class="no-account">
+      <p class="no-account-text">Don't have an account? Click below to sign up.</p>
+      <button class="sign-up-button" type="submit" name="sign-up">
+        <%= link_to "Sign up", new_user_registration_path, class: "sign-up-links" %>
+      </button>
+    </div>
   </div>
 </article>

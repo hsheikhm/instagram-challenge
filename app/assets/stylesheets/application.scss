@@ -145,6 +145,10 @@ footer > a:visited {
   margin-right: 4px;
 }
 
+.forgot-password-link:hover {
+  text-decoration: none;
+}
+
 .login-button {
   width: 250px;
   margin: 4px 40px 14px;
@@ -169,4 +173,52 @@ footer > a:visited {
 
 .login-button:hover {
   background-color: #125688;
+}
+
+.no-account {
+  margin-top: 10px;
+}
+
+.no-account-text {
+  color: #4b4f54;
+  font-size: 13px;
+  line-height: 18px;
+  margin: 10px 20px 10px 20px;
+  text-align: center;
+}
+
+.sign-up-button {
+  width: 250px;
+  margin: 4px 40px 14px;
+  line-height: 29px;
+  padding: 0 11px;
+  cursor: pointer;
+  background-color: #125688;
+  border-color: #125688;
+  color: white;
+  border-radius: 3px;
+  border-style: solid;
+  border-width: 1px;
+  font-size: 13px;
+  font-weight: 400;
+  outline: none;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+    -webkit-appearance: none;
+  font-family: 'proxima-nova', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+}
+
+.sign-up-button:hover {
+  background-color: #4090db;
+}
+
+.sign-up-links {
+  color: white;
+  text-decoration: none;
+}
+
+.sign-up-links:hover {
+  color: white;
+  text-decoration: none;
 }
