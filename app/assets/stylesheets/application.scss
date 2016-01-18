@@ -38,6 +38,14 @@ footer > a:visited {
   color: #125688;
 }
 
+form {
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+}
+
 .wrapper {
   height:100vh;
   display:flex;
@@ -78,7 +86,7 @@ footer > a:visited {
   float: right;
 }
 
-.login-fields {
+.login-container {
   background-color: white;
   border: 1px solid #edeeee;
   border-radius: 1px;
@@ -86,7 +94,7 @@ footer > a:visited {
   padding: 10px 0;
 }
 
-.instagram-logo {
+.login-instagram-logo {
   margin: 20px auto 10px;
   display: block;
   overflow: hidden;
@@ -97,4 +105,50 @@ footer > a:visited {
   background-position: 0px -322px;
   height: 49px;
   width: 171px;
+}
+
+.login-fields {
+  margin-bottom: 10px;
+}
+
+.login-text-field {
+  margin: 0 40px 6px;
+  position: relative;
+}
+
+.email-text-field, .password-text-field {
+  background-color: #fdfdfd;
+  border: 1px solid #edeeee;
+  border-radius: 3px;
+  font-size: 13px;
+  padding: 9px 8px 7px;
+  -webkit-appearance: none;
+  font-family: 'proxima-nova', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+  height: 32px;
+  width: 250px;
+}
+
+.remember-me {
+  font-family: 'proxima-nova', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  color: #125688;
+}
+
+.forgot-password {
+  align-items: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  flex-direction: row;
+  height: 100%;
+  position: absolute;
+  right: 8px;
+  top: 5px;
+}
+
+.forgot-password-link {
+  color: #125688;
+  text-decoration: none;
+  font-size: 13px;
+  margin-right: 4px;
 }
