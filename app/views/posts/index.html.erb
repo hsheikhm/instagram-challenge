@@ -1,5 +1,6 @@
 <% if @posts.any? %>
   <% @posts.each do |post| %>
+    <%= image_tag post.user.image.url(:thumb) %>
     <p><strong><%= post.title %> by: <%= post.user.username %></strong></p>
     <div><%= image_tag post.image.url(:medium) %>
       <br>
