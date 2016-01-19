@@ -422,3 +422,79 @@ footer > a:visited {
   text-overflow: ellipsis;
   white-space: nowrap;
 }
+
+.add-comment-section {
+  margin-top: 13px;
+  min-height: 13px;
+  -webkit-box-align: center;
+  align-items: center;
+  border-top: 1px solid #eeefef;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  justify-content: center;
+}
+
+.likes-link {
+  color: #125688;
+  text-decoration: none;
+  margin-left: -9px;
+  margin-right: 3px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  background-image: url(//instagramstatic-a.akamaihd.net/h1/sprites/core-sprites-cd6d7d.png);
+  background-repeat: no-repeat;
+  background-position: -173px -322px;
+  height: 44px;
+  width: 44px;
+  display: block;
+  overflow: hidden;
+  text-indent: 110%;
+  white-space: nowrap;
+  position: relative;
+}
+
+.new-comment-form {
+  color: #4b4f54;
+}
+
+.new-comment-text {
+  font-size: 15px;
+  line-height: 18px;
+  background: none;
+  border: none;
+  outline: none;
+  width: 80%;
+  font-family: 'proxima-nova', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+  cursor: auto;
+  padding: 1px;
+  resize: none;
+  margin-left: 36px;
+  margin-top: -43px;
+}
+
+form#new_comment.new_comment {
+  margin-top: -8px;
+  max-height: 26px;
+}
+
+.submit-comment-button {
+  width: 74px;
+  margin: -27px 244px 14px;
+  line-height: 29px;
+  background-color: white;
+  color: #125688;
+  font-size: 13px;
+  font-weight: 500;
+  outline: none;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-family: 'proxima-nova', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+  text-transform: uppercase;
+  border: none;
+}

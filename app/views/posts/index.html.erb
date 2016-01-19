@@ -33,19 +33,16 @@
               <p>No comments.</p>
             <% end %>
           </ul>
-
-
-
-
-
+          <section class="add-comment-section">
+          </section>
           <%= link_to post_likes_path(post), class: 'likes-link' do %>
-              <i class="glyphicon glyphicon-heart"></i>
           <% end %>
-          <%= form_for [post, @comment] do |f| %>
-          <%= f.label :thoughts %>
-          <%= f.text_area :thoughts %>
-          <%= f.submit "Leave Comment" %>
-          <% end %>
+          <div class="new-comment-form">
+            <%= form_for [post, @comment] do |f| %>
+            <%= f.text_area :thoughts, placeholder: "Add a comment...", class: 'new-comment-text' %>
+            <%= f.submit "Submit", class: 'submit-comment-button' %>
+            <% end %>
+          </div>
         </div>
       </article>
       <% end %>
