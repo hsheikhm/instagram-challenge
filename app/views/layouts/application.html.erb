@@ -10,12 +10,16 @@
   <body>
     <div class="wrapper">
       <header>
-        <% if user_signed_in? %>
-          <%= link_to "Sign out", destroy_user_session_path, method: :delete %>
-        <% else %>
-          <%= link_to "Login", new_user_session_path %> |
-          <%= link_to "Sign up", new_user_registration_path %>
-        <% end %>
+        <div class="custom-navbar">
+          <% if user_signed_in? %>
+            <%= link_to "New Post", new_post_path, class: 'new-post-link' %>
+            <a class="header-instagram-logo" href="/">Instagram</a>
+            <p class="current-username"><%= current_user.username %> | <%= link_to "Sign out", destroy_user_session_path, method: :delete, class: 'sign-out-link' %></p>
+          <% else %>
+            <%= link_to "Login", new_user_session_path %> |
+            <%= link_to "Sign up", new_user_registration_path %>
+          <% end %>
+        </div>
       </header>
       <main>
         <%= notice %>
