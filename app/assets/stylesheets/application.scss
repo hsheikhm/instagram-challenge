@@ -377,3 +377,48 @@ footer > a:visited {
   font-weight: 500;
   color: #4b4f54;
 }
+
+.post-details {
+  margin-left: -24px;
+  margin-right: -24px;
+  padding-left: 24px;
+  padding-right: 24px;
+  margin-top: 4px;
+  padding-top: 5px;
+  margin-bottom: 7px;
+  list-style-type: none;
+}
+
+.post-user-and-title {
+  margin-bottom: 7px;
+  position: relative;
+  word-wrap: break-word;
+}
+
+.post-detail-user-username {
+  color: #125688;
+  margin-right: 0.3em;
+  font-size: 15px;
+  line-height: 18px;
+  font-weight: 600;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.post-comment {
+  margin-bottom: 7px;
+  position: relative;
+  word-wrap: break-word;
+}
+
+.comment-user-username {
+  color: #125688;
+  margin-right: 0.3em;
+  font-size: 15px;
+  line-height: 18px;
+  font-weight: 600;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}

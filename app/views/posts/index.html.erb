@@ -17,23 +17,27 @@
         </div>
         <div class="post-extra-section">
           <span class="likes_count"> <%= post.likes.count %> </span> <span class="likes-word"><%= 'like'.pluralize(post.likes.count) %></span>
-
-
-
-
-          <p><strong><%= post.title %></strong></p>
-          <% if post.comments.any? %>
-            <ul>
+          <ul class="post-details">
+            <li class="post-user-and-title">
+              <span class="post-detail-user-username"><%= post.user.username %></span>
+              <span><strong><%= post.title %></strong></span>
+            </li>
+            <% if post.comments.any? %>
               <% post.comments.each do |comment| %>
+            <li class="post-comment">
+              <span class="comment-user-username"><%= comment.user.username %></span>
+              <span><%= comment.thoughts %></span>
+            </li>
+                <% end %>
+            <% else %>
+              <p>No comments.</p>
+            <% end %>
+          </ul>
 
-                <li>
-                  <%= comment.user.username %>: <%= comment.thoughts %>
-                </li>
-              <% end %>
-            </ul>
-          <% else %>
-            <p>No comments.</p>
-          <% end %>
+
+
+
+
           <%= link_to post_likes_path(post), class: 'likes-link' do %>
               <i class="glyphicon glyphicon-heart"></i>
           <% end %>
