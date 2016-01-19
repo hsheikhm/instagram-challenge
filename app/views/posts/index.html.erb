@@ -15,15 +15,12 @@
         <div class="post-image-div">
           <%= image_tag post.image.url(:medium), class: 'post-image' %>
         </div>
+        <div class="post-extra-section">
+          <span class="likes_count"> <%= post.likes.count %> </span> <span class="likes-word"><%= 'like'.pluralize(post.likes.count) %></span>
 
 
 
 
-
-
-        <div>
-          <br>
-        <span class="likes_count"> <%= post.likes.count %> </span> <%= 'like'.pluralize(post.likes.count) %>
           <p><strong><%= post.title %></strong></p>
           <% if post.comments.any? %>
             <ul>
@@ -45,7 +42,7 @@
           <%= f.submit "Leave Comment" %>
           <% end %>
         </div>
-        </article>
+      </article>
       <% end %>
     <% end %>
   </div>
