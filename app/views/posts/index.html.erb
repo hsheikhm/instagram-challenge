@@ -25,8 +25,9 @@
           <% if post.comments.any? %>
             <ul>
               <% post.comments.each do |comment| %>
+
                 <li>
-                  <%= comment.thoughts %>
+                  <%= comment.user.username %>: <%= comment.thoughts %>
                 </li>
               <% end %>
             </ul>

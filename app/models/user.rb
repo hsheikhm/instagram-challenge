@@ -1,6 +1,7 @@
 class User < ActiveRecord::Base
 
   has_many :posts, dependent: :destroy
+  has_many :comments, dependent: :destroy
   validates :username, presence: true
 
   has_attached_file :image, :styles => { :medium => "300x300>", :thumb => "50x50>" }, :default_url => "/images/:style/missing.png"
