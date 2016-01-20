@@ -9,7 +9,11 @@ require 'capybara/rails'
 require 'capybara/rspec'
 require 'support/database_cleaner'
 require 'capybara/poltergeist'
-Capybara.javascript_driver = :poltergeist
+
+Phantomjs.path
+Capybara.register_driver :poltergeist do |app|
+  Capybara::Poltergeist::Driver.new(app, :phantomjs => Phantomjs.path)
+end
 
 
 # Add additional requires below this line. Rails is not loaded until this point!

@@ -48,6 +48,8 @@ group :development, :test do
   gem 'shoulda'
   gem 'database_cleaner'
   gem 'poltergeist'
+  gem 'phantomjs'
+  gem 'selenium-webdriver'
 end
 
 group :development do
