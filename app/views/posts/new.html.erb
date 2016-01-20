@@ -1,18 +1,33 @@
-<% if @post.errors.any? %>
-  <section id="errors" >
-    <h3> <%= pluralize(@post.errors.count, "error") %> prohibited this post from being submitted: </h2>
-    <ul>
-      <% @post.errors.full_messages.each do |message| %>
-        <li><%= message %></li>
-      <% end %>
-    </ul>
-  </section>
-<% end %>
-
-<%= form_for @post, url: posts_path, html: {multipart: true} do |f| %>
-  <%= f.label :image %>
-  <%= f.file_field :image %>
-  <%= f.label :title %>
-  <%= f.text_field :title %>
-  <%= f.submit "Post Image" %>
-<% end %>
+<!-- # <% if @post.errors.any? %>
+#   <section id="errors" >
+#     <h3> <%= pluralize(@post.errors.count, "error") %> prohibited this post from being submitted: </h2>
+#     <ul>
+#       <% @post.errors.full_messages.each do |message| %>
+#         <li><%= message %></li>
+#       <% end %>
+#     </ul>
+#   </section>
+# <% end %> -->
+<section class="new-post-section">
+  <div class="new-post-file">
+    <%= form_for @post, url: posts_path, html: {multipart: true} do |f| %>
+      <%= f.label "Select Image" %>
+      <%= f.file_field :image, onchange: "previewImage(event)" %>
+  </div>
+  <div class="new-post-title">
+    <%= f.text_field :title, placeholder: "Give your post a title...", class: 'new-post-title-text' %>
+  </div>
+  <div class="new-post-image-div">
+    <img id="image-preview"/>
+  </div>
+  <div class="new-post-submit">
+    <%= f.submit "Post Image", class: "new-post-submit-button" %>
+    <% end %>
+  </div>
+  <script>
+    var previewImage = function(event) {
+      var output = document.getElementById('image-preview');
+      output.src = URL.createObjectURL(event.target.files[0]);
+    };
+  </script>
+</section>
