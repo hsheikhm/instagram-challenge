@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
 
-  root to: "posts#index"
+  root to: "devise/sessions#new"
 
   get 'posts' => 'posts#index'
 
