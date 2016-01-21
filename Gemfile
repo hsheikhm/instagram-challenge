@@ -53,6 +53,7 @@ group :development, :test do
   gem 'launchy'
   gem 'chromedriver-helper'
   gem 'bundler'
+  gem 'rails_12factor'
 end
 
 group :development do
