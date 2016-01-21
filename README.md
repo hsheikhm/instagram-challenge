@@ -1,4 +1,4 @@
-Instagram Challenge [![Build Status](https://travis-ci.org/hsheikhm/instagram_clone.svg?branch=master)](https://travis-ci.org/hsheikhm/instagram_clone) [![Coverage Status](https://coveralls.io/repos/github/hsheikhm/instagram_clone/badge.svg?branch=master)](https://coveralls.io/github/hsheikhm/instagram_clone?branch=master)
+Instagram Challenge [![Build Status](https://travis-ci.org/hsheikhm/instagram_clone.svg?branch=master)](https://travis-ci.org/hsheikhm/instagram_clone)
 ===================
 
 Instructions
