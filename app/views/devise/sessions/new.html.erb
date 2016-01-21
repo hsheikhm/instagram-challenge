@@ -6,7 +6,7 @@
     <div class="login-container">
       <h1 class="login-instagram-logo">Instagram</h1>
       <div class="login-fields">
-          <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+          <%= form_for(resource, as: resource_name, url: session_path(resource_name), multipart: true) do |f| %>
             <div class="login-text-field">
               <%= f.email_field :email, autofocus: true, placeholder: "Email", class: 'email-text-field' %>
             </div>
