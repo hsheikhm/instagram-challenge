@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-feature "commenting" do
+feature "Commenting" do
 
   before do
     image = fixture_file_upload("files/test.jpg", "image/jpg")

@@ -15,6 +15,10 @@ Capybara.register_driver :poltergeist do |app|
   Capybara::Poltergeist::Driver.new(app, :phantomjs => Phantomjs.path)
 end
 
+Capybara.register_driver :selenium do |app|
+  Capybara::Selenium::Driver.new(app, :browser => :chrome)
+end
+
 
 # Add additional requires below this line. Rails is not loaded until this point!
 

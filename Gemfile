@@ -51,6 +51,7 @@ group :development, :test do
   gem 'phantomjs'
   gem 'selenium-webdriver'
   gem 'launchy'
+  gem 'chromedriver-helper'
 end
 
 group :development do
