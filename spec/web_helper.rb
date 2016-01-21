@@ -5,7 +5,7 @@ def sign_up
   page.attach_file "Profile Image", Rails.root + "spec/fixtures/files/test.jpg"
   fill_in "Password", with: "letmein1"
   fill_in "passwordconf-text-field", with: "letmein1"
-  click_button "Sign up"
+  click_button "Sign up" 
 end
 
 def login
