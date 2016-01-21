@@ -50,6 +50,7 @@ group :development, :test do
   gem 'poltergeist'
   gem 'phantomjs'
   gem 'selenium-webdriver'
+  gem 'launchy'
 end
 
 group :development do

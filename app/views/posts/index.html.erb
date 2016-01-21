@@ -26,7 +26,7 @@
               <% post.comments.each do |comment| %>
             <li class="post-comment">
               <span class="comment-user-username"><%= comment.user.username %></span>
-              <span><%= comment.thoughts %></span>
+              <span class="comment-user-thoughts"><%= comment.thoughts %></span>
             </li>
                 <% end %>
             <% else %>
@@ -39,7 +39,7 @@
           <% end %>
           <div class="new-comment-form">
             <%= form_for [post, @comment] do |f| %>
-            <%= f.text_area :thoughts, placeholder: "Add a comment...", class: 'new-comment-text' %>
+            <%= f.text_area :thoughts, placeholder: "Add a comment...", id: 'new-comment-text' %>
             <%= f.submit "Submit", class: 'submit-comment-button' %>
             <% end %>
           </div>

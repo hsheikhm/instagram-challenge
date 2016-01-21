@@ -156,7 +156,7 @@ footer > a:visited {
   position: relative;
 }
 
-.email-text-field, .password-text-field {
+.email-text-field, .password-text-field, #passwordconf-text-field {
   background-color: #fdfdfd;
   border: 1px solid #edeeee;
   border-radius: 3px;
@@ -462,7 +462,7 @@ footer > a:visited {
   color: #4b4f54;
 }
 
-.new-comment-text {
+#new-comment-text {
   font-size: 15px;
   line-height: 18px;
   background: none;
@@ -521,9 +521,8 @@ form#new_comment.new_comment {
 }
 
 .new-post-file {
-  margin-left: 385px;
+  margin: auto;
   color: #125688;
-  font-weight: bold;
   font-size: 13px;
   font-family: 'proxima-nova', 'Helvetica Neue', Arial, Helvetica, sans-serif;
   text-transform: uppercase;
@@ -544,18 +543,18 @@ form#new_comment.new_comment {
   color: #125688;
 }
 
-.new-post-title-text {
+#new-post-title-text {
   font-size: 15px;
   line-height: 18px;
-  background: none;
-  border: none;
-  outline: none;
-  width: 100%;
+  width: 47%;
   font-family: 'proxima-nova', 'Helvetica Neue', Arial, Helvetica, sans-serif;
   cursor: auto;
-  padding: 17px;
+  padding: 10px;
   resize: none;
   text-align: center;
+  margin-top: 25px;
+  margin-bottom: 34px;
+  margin-left: 246px;
 }
 
 .new-post-image-div {
@@ -565,6 +564,11 @@ form#new_comment.new_comment {
   height: 350px;
   margin: auto;
   margin-top: 6px;
+}
+
+#new-image {
+  margin-left: 379px;
+  padding-top: 9px;
 }
 
 #image-preview {
@@ -578,27 +582,25 @@ form#new_comment.new_comment {
 }
 
 .new-post-submit-button {
-  width: 91px;
-  margin: -4px 8px 14px;
   line-height: 29px;
   padding: 0 11px;
-  cursor: pointer;
   background-color: #125688;
   border-color: #125688;
   color: white;
   border-radius: 3px;
   border-style: solid;
   border-width: 1px;
-  font-size: 13px;
-  font-weight: 400;
-  outline: none;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-    -webkit-appearance: none;
-  font-family: 'proxima-nova', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+  margin-left: 20px;
 }
 
 .new-post-submit-button:hover {
   background-color: #4090db;
+}
+
+.select-image-label {
+  display: inline-block;
+  max-width: 100%;
+  margin-bottom: 5px;
+  font-weight: bold;
+  margin-left: 414px;
 }
