@@ -1,5 +1,45 @@
-Instagram Challenge [![Build Status](https://travis-ci.org/hsheikhm/instagram_clone.svg?branch=master)](https://travis-ci.org/hsheikhm/instagram_clone)
-===================
+# Instagram Clone [![Build Status](https://travis-ci.org/hsheikhm/instagram_clone.svg?branch=master)](https://travis-ci.org/hsheikhm/instagram_clone)
+
+* [Task & User Stories](#task)
+* [My Approach](#my-approach)
+* [Directory Structure](#directory-structure)
+* [App Usage and Features](#app-usage-and-features)
+* [Demo App](#demo-app)
+* [Download Instructions](#download-instructions)
+
+## Task
+
+Build a clone of [Instagram](https://www.instagram.com/) using Rails. You'll need **users** who can post **pictures**, write **comments** on pictures and **like** a picture. Style it like Instagram's website.
+
+#### User Stories:
+
+```
+As a User
+So that I can view my friends' pictures
+I want to sign up to Instagram
+
+As a User
+So that I can share my own pictures
+I want to post a picture with a title
+
+As a User
+So that I can easily find the most recently made posts
+I want to view all posts in chronological order
+
+As a User
+So that I can get more information about a post
+I want to see the post's author, time it was posted and all its comments
+
+As a User
+So that I can show how much I like a post
+I want to 'like' a post
+
+As a User
+So that I can share my own thoughts
+I want to comment on a post
+```
+
+
 
 Instructions
 -------
