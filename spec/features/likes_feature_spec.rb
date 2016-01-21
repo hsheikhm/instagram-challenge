@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-feature 'liking posts' do
+feature 'Liking posts' do
 
   scenario "a user can like a post, which increments the likes count", js: true do
     sign_up

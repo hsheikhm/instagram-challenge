@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-feature 'posts' do
+feature 'Posts' do
 
   context "no images have been posted" do
     scenario "should display a link to post an image" do
