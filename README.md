@@ -39,28 +39,12 @@ So that I can share my own thoughts
 I want to comment on a post
 ```
 
+## My Approach
 
+I set myself a **target** for this project which was to *make the app function and look as close as possible to the real Instagram website*. I wanted to challenge and prove to myself that I could build something similar to an app that is already being used on a large scale.
 
-Instructions
--------
-* Challenge time: Friday, the entire day + the weekend if you need it
-* Feel free to use Google, your notes, books, etc., but work on your own
-* If you refer to the solution of another coach or student, please put a link to that in your README
-* If you have a partial solution, **still check in a partial solution**
-* You must submit a pull request to this repo with your code by 9am Monday morning
+There were **two practices** that I focused on while building this project. The first was to take an **agile approach**. For this reason I broke the app down to the above **user stories** and then worked on each one individually (in a **TDD** approach of couse). This way I could build the app feature-by-feature.
 
-Task
------
+The second practice that I focused heavily on was **git flow** i.e. *the agile approach of version control*. To achieve this, I always created a separate git branch (from master) for each new feature. I then made all commits to this separate branch and only once all tests had passed for that feature did I then merge that branch into master. This had significantly improved my git flow skills.
 
-Build Instagram: Simple huh!
-
-Bonus if you can write your own set of sensible user stories!
-
-As usual please start by
-
-* Filling out your learning plan self review for the week: https://github.com/makersacademy/learning_plan_october2015 (if you haven't already)
-* Forking this repo. After cloning your fork and cd'ing into it, you'll need to [initialize a Rails app in the current directory](http://blog.jasonmeridth.com/posts/create-rails-application-in-current-directory/).
-
-Your challenge is to build Instagram using Rails. You'll need **users** who can post **pictures**, write **comments** on pictures and **like** a picture. Style it like Instagram's website (or more awesome).
-
-Bonus if you can add filters!
+Once the app was fully built and tested I then worked on the **styling**. I wanted to make the app look exactly like Instagram and I'm glad to say that this has been achieved.
