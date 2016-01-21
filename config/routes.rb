@@ -1,13 +1,19 @@
 Rails.application.routes.draw do
 
-  # root to: "devise/sessions#new"
+  root to: "posts#index"
 
   get 'posts' => 'posts#index'
 
-  # devise_for :users
+  devise_for :users
 
   devise_scope :user do
-    root to: "devise/sessions#new"
+    authenticated :user do
+      root 'posts#index', as: :authenticated_root
+    end
+
+    unauthenticated do
+      root 'devise/sessions#new', as: :unauthenticated_root
+    end
   end
 
   resources :posts do
