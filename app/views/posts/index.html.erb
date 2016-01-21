@@ -1,7 +1,7 @@
 <section class="posts-section">
   <div class="posts-div">
     <% if @posts.any? %>
-      <% @posts.each do |post| %>
+      <% @posts.reverse.each do |post| %>
       <article class="each-post">
         <header class="post-header">
           <%= image_tag post.user.image.url(:thumb), class: 'post-user-image' %>
