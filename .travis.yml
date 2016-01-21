@@ -1,6 +1,20 @@
+# rvm: '2.2.3'
+# script: bundle exec rspec spec
+# script:
+#   - bundle exec bin/rake db:create
+#   - bundle exec bin/rake db:migrate
+#   - bundle exec rspec spec
+
 rvm: '2.2.3'
-script: bundle exec rspec spec
+
 script:
-  - bundle exec bin/rake db:create
-  - bundle exec bin/rake db:migrate
-  - bundle exec rspec spec
+  - mkdir -p spec && bundle exec rspec spec
+
+before_install:
+- sed -i '2d' Gemfile
+- sudo apt-get update -qq
+- sudo apt-get install -qq postgresql-server-dev-9.3
+
+before_script:
+  - psql -c 'create database instagram_clone_test;' -U postgres
+  - bundle exec rake db:migrate RACK_ENV=test
