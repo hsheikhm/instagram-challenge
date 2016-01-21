@@ -1,4 +1,4 @@
-Instagram Challenge
+Instagram Challenge [![Build Status](https://travis-ci.org/hsheikhm/instagram_clone.svg?branch=master)](https://travis-ci.org/hsheikhm/instagram_clone)
 ===================
 
 Instructions
