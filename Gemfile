@@ -52,6 +52,7 @@ group :development, :test do
   gem 'selenium-webdriver'
   gem 'launchy'
   gem 'chromedriver-helper'
+  gem 'bundler'
 end
 
 group :development do
