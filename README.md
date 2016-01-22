@@ -49,4 +49,4 @@ The second practice that I focused heavily on was **git flow** i.e. *the agile a
 
 Once the app was fully built and tested I then worked on the **styling**. I wanted to make the app look exactly like Instagram and I'm glad to say that this has been achieved.
 
-As for data storage, I had integrated Amazon's AWS/S3 service in order to store the images.
+As for **data storage**, I had integrated **Amazon's AWS/S3** service in order to store the images.
