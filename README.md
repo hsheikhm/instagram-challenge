@@ -92,3 +92,9 @@ As for **data storage**, I had integrated **Amazon's AWS/S3** service in order t
 ![Like and Comment](https://github.com/hsheikhm/Github-Images/blob/master/instagram-clone/likeandcomment.png)
 
 ## Demo App
+
+Visit the link below to see a live version of the app.
+
+[Instagram Clone App](https://clone-of-instagram.herokuapp.com/users/sign_in)
+
+## Download Instructions
