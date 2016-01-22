@@ -48,3 +48,5 @@ There were **two practices** that I focused on while building this project. The 
 The second practice that I focused heavily on was **git flow** i.e. *the agile approach of version control*. To achieve this, I always created a separate git branch (from master) for each new feature. I then made all commits to this separate branch and only once all tests had passed for that feature did I then merge that branch into master. This had significantly improved my git flow skills.
 
 Once the app was fully built and tested I then worked on the **styling**. I wanted to make the app look exactly like Instagram and I'm glad to say that this has been achieved.
+
+As for data storage, I had integrated Amazon's AWS/S3 service in order to store the images.
