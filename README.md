@@ -1,4 +1,4 @@
-# Instagram Clone [![Build Status](https://travis-ci.org/hsheikhm/instagram_clone.svg?branch=master)](https://travis-ci.org/hsheikhm/instagram_clone)
+# Instagram Clone
 
 * [Task & User Stories](#task)
 * [My Approach](#my-approach)
@@ -52,3 +52,20 @@ Once the app was fully built and tested I then worked on the **styling**. I want
 As for **data storage**, I had integrated **Amazon's AWS/S3** service in order to store the images.
 
 ## Directory Structure
+
+```
+├── app/
+│   ├── controllers/
+│   │   ├── application_controller.rb
+│   │   ├── comments_controller.rb
+│   │   ├── posts_controller.rb
+│   │   └── likes_controller.rb
+│   │
+│   ├── models/
+│   │   ├── comment.rb
+│   │   ├── like.rb
+│   │   ├── post.rb
+│   │   └── user.rb
+│   │
+
+```
