@@ -67,5 +67,16 @@ As for **data storage**, I had integrated **Amazon's AWS/S3** service in order t
 │   │   ├── post.rb
 │   │   └── user.rb
 │   │
-
 ```
+
+## App Usage and Features
+
+***New user can sign up to Instagram:***
+
+***Existing user can login to Instagram:***
+
+***User can view all posts in chronological order:***
+
+***User can make a new post:***
+
+***User can like a post and enter a comment:***
