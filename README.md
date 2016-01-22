@@ -73,10 +73,22 @@ As for **data storage**, I had integrated **Amazon's AWS/S3** service in order t
 
 ***New user can sign up to Instagram:***
 
+![Sign Up Page](https://github.com/hsheikhm/Github-Images/blob/master/instagram-clone/signup.png)
+
 ***Existing user can login to Instagram:***
+
+![Login Page](https://github.com/hsheikhm/Github-Images/blob/master/instagram-clone/login.png)
 
 ***User can view all posts in chronological order:***
 
+![Home Page](https://github.com/hsheikhm/Github-Images/blob/master/instagram-clone/allposts.png)
+
 ***User can make a new post:***
 
+![New Post Page](https://github.com/hsheikhm/Github-Images/blob/master/instagram-clone/newpost.png)
+
 ***User can like a post and enter a comment:***
+
+![Like and Comment](https://github.com/hsheikhm/Github-Images/blob/master/instagram-clone/likeandcomment.png)
+
+## Demo App
