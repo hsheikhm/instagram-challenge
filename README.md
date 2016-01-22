@@ -98,3 +98,15 @@ Visit the link below to see a live version of the app.
 [Instagram Clone App](https://clone-of-instagram.herokuapp.com/users/sign_in)
 
 ## Download Instructions
+
+Follow the below instructions on your terminal to download the app:
+
+```
+$ git clone https://github.com/hsheikhm/instagram_clone.git
+$ cd instagram_clone
+$ bundle
+$ bin/rake db:create
+$ bin/rake db:migrate
+$ rails s
+(visit localhost)
+```
