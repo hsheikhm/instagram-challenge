@@ -1,20 +1,19 @@
-# rvm: '2.2.3'
-# script: bundle exec rspec spec
-# script:
-#   - bundle exec bin/rake db:create
-#   - bundle exec bin/rake db:migrate
-#   - bundle exec rspec spec
-
-rvm: '2.2.3'
-
+rvm: 2.2.3
 script:
-  - mkdir -p spec && bundle exec rspec spec
-
+- mkdir -p spec && bundle exec rspec spec
 before_install:
 - sed -i '2d' Gemfile
 - sudo apt-get update -qq
 - sudo apt-get install -qq postgresql-server-dev-9.3
-
 before_script:
-  - psql -c 'create database instagram_clone_test;' -U postgres
-  - bundle exec rake db:migrate RACK_ENV=test
+- psql -c 'create database instagram_clone_test;' -U postgres
+- bundle exec rake db:migrate RACK_ENV=test
+deploy:
+  provider: s3
+  access_key_id: AKIAI3D6R3RUMP6FS3JA
+  secret_access_key:
+    secure: L0vtraabDoEXV0KWwUeBFw2vwvcelOjrSgdnFYLCsPqZm/mETIf5S+0ZylEgHwyeQIAZkhEGlCwpF+zi64EMRNLwaehfod6jadnB4d/tq1K0dm0G1ehmnenNeZH7YDXRxH6q4y+hvUA3Lm3qMkZ+Htqc8AeO6e+Qz91aMnJh0QOt9ggRwK+QXTT3jie9LC3S+9P9d5Zddx1irr1V8bgH0TwUA3Cg365JmsxuplM0tXySyO+M7ZksrYGXHtlKkEc+ftZ+2jeMjIK6U8tCphxW8wnxvdLZ9V9Hj0CqefgdvfvXbpfW3ck8Hok6BxEeBFqAv5x+fYlQRWJ9uYdOpNoNU0Jp3A0ZvxLS//Jy8D9ft1Bo3mylqYw5TU00DjTwrU8Fk9OFj0LWlC64TzDNqFL9XL69JTvXG6vk9wN1S4WzULYhKjGLu7wloAEuvNBbRTiEFIaP9yFF4jJJ54KqEUAeo1FiT86qnSuamlonCd0cbH9jZoszwSBq6cEn5NtMQPAU/AUvHwDcq6mDk/WUVIGEMbClip74JYlGCAa2xs+kHYQQVcnFyZ3HezDn8K1rqaezyNQ46J7qAmR4e004BJNknu9/l6QN6w8XcmoUROUb0GPAytvdbremYmAVVa3jpLKzoy7KHlFc826BuIq38jRiPmenZZusbPaRodwvHEzzIp8=
+  bucket: instagram-clone-hamza-production
+  acl: ''
+  on:
+    repo: hsheikhm/instagram_clone
