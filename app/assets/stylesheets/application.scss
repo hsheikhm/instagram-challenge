@@ -14,80 +14,80 @@
  //  border: 1px solid #edeeee;
  // }
 
- main {
-  background-color: #fafafa;
- }
+ // main {
+ //  background-color: #fafafa;
+ // }
 
-footer {
-  height: 39px;
-  background-color: white !important;
-  text-align: center;
-  color: #125688;
-  font-weight: bold;
-  font-size: 11px;
-  font-family: 'proxima-nova', 'Helvetica Neue', Arial, Helvetica, sans-serif;
-  text-transform: uppercase;
-  padding: 11px;
-  border: 1px solid #edeeee;
-}
+// footer {
+//   height: 39px;
+//   background-color: white !important;
+//   text-align: center;
+//   color: #125688;
+//   font-weight: bold;
+//   font-size: 11px;
+//   font-family: 'proxima-nova', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+//   text-transform: uppercase;
+//   padding: 11px;
+//   border: 1px solid #edeeee;
+// }
 
-footer > a:link {
-  color: #125688;
-}
+// footer > a:link {
+//   color: #125688;
+// }
+//
+// footer > a:visited {
+//   color: #125688;
+// }
 
-footer > a:visited {
-  color: #125688;
-}
+// .wrapper {
+//   height: 100%;
+//   display:flex;
+//   flex-direction: column;
+// }
 
-.wrapper {
-  height: 100%;
-  display:flex;
-  flex-direction: column;
-}
+// .custom-navbar {
+//   max-width: 600px;
+//   height: 31px;
+//   -webkit-box-orient: horizontal;
+//   -webkit-box-direction: normal;
+//   -ms-flex-direction: row;
+//   flex-direction: row;
+//   margin: 0 auto;
+//   width: 100%;
+// }
 
-.custom-navbar {
-  max-width: 600px;
-  height: 31px;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  margin: 0 auto;
-  width: 100%;
-}
+// .header-instagram-logo {
+//   color: #125688;
+//   text-decoration: none;
+//   flex-shrink: 0;
+//   left: -33px;
+//   margin: auto;
+//   position: relative;
+//   background-image: url(//instagramstatic-a.akamaihd.net/h1/sprites/core-sprites-cd6d7d.png);
+//   background-repeat: no-repeat;
+//   background-position: -344px -284px;
+//   height: 28px;
+//   width: 102px;
+//   display: block;
+//   overflow: hidden;
+//   text-indent: 110%;
+//   white-space: nowrap;
+// }
 
-.header-instagram-logo {
-  color: #125688;
-  text-decoration: none;
-  flex-shrink: 0;
-  left: -33px;
-  margin: auto;
-  position: relative;
-  background-image: url(//instagramstatic-a.akamaihd.net/h1/sprites/core-sprites-cd6d7d.png);
-  background-repeat: no-repeat;
-  background-position: -344px -284px;
-  height: 28px;
-  width: 102px;
-  display: block;
-  overflow: hidden;
-  text-indent: 110%;
-  white-space: nowrap;
-}
+// .current-username {
+//   float: right;
+//   margin-top: -25px;
+// }
 
-.current-username {
-  float: right;
-  margin-top: -25px;
-}
+// .new-post-link {
+//   color: #125688;
+//   float: left;
+//   padding-top: 3px;
+// }
 
-.new-post-link {
-  color: #125688;
-  float: left;
-  padding-top: 3px;
-}
-
-.sign-out-link {
-  color: #125688;
-}
+// .sign-out-link {
+//   color: #125688;
+// }
 
 .main-article {
   -webkit-box-orient: horizontal;

@@ -9,3 +9,54 @@ header
   text-transform: uppercase
   padding: 13px
   border: 1px solid #edeeee
+
+main
+  background-color: #fafafa
+
+footer
+  @extend header
+
+  a
+    color: $primary-color
+
+.wrapper
+  height: 100%
+  display: flex
+  flex-direction: column
+
+.custom-navbar
+  +height-width(31px, 100%)
+  max-width: 600px
+  margin: 0 auto
+  -webkit-box-orient: horizontal
+  -webkit-box-direction: normal
+  -ms-flex-direction: row
+  flex-direction: row
+
+.new-post-link
+  color: $primary-color
+  float: left
+  padding-top: 3px
+
+.header-instagram-logo
+  +height-width(28px, 102px)
+  color: $primary-color
+  text-decoration: none
+  flex-shrink: 0
+  left: -33px
+  margin: auto
+  position: relative
+  background-image: url(//instagramstatic-a.akamaihd.net/h1/sprites/core-sprites-cd6d7d.png)
+  background-repeat: no-repeat
+  background-position: -344px -284px
+  display: block
+  overflow: hidden
+  text-indent: 110%
+  white-space: nowrap
+
+.current-username
+  float: right
+  margin-top: -25px
+
+.sign-out-link
+  color: $primary-color
