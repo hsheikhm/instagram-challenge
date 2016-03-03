@@ -89,213 +89,213 @@
 //   color: #125688;
 // }
 
-.main-article {
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  margin: 0px auto 0px;
-  max-width: 935px;
-  height: 618px;
-  width: 100%;
-}
+// .main-article {
+//   -webkit-box-orient: horizontal;
+//   -webkit-box-direction: normal;
+//   -webkit-flex-direction: row;
+//   -ms-flex-direction: row;
+//   flex-direction: row;
+//   -webkit-box-flex: 1;
+//   -webkit-flex-grow: 1;
+//   -ms-flex-positive: 1;
+//   flex-grow: 1;
+//   -webkit-box-pack: center;
+//   -webkit-justify-content: center;
+//   -ms-flex-pack: center;
+//   justify-content: center;
+//   margin: 0px auto 0px;
+//   max-width: 935px;
+//   height: 618px;
+//   width: 100%;
+// }
 
-.login-form {
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
-    -webkit-box-pack: center;
-    -webkit-justify-content: center;
-    -ms-flex-pack: center;
-  justify-content: center;
-  max-width: 350px;
-  height: 464px;
-  float: right;
-  position: relative;
-  margin-right: 118px;
-  margin-top: -508px;
-}
+// .iphone-section {
+//   align-self: center;
+//   background: url("//instagramstatic-a.akamaihd.net/h1/images/homepage/home-phones.png/26f8f9119be7.png");
+//   flex-basis: 454px;
+//   height: 618px;
+//   width: 395px;
+//   margin-left: 59px;
+// }
 
-.login-container {
-  background-color: white;
-  border: 1px solid #edeeee;
-  border-radius: 1px;
-  margin: 0 0 10px;
-  padding: 10px 0;
-}
+// .iphone-image {
+//   height: 422px;
+//   margin-left: 135px;
+//   margin-top: 97px;
+// }
 
-.login-instagram-logo {
-  margin: 20px auto 10px;
-  display: block;
-  overflow: hidden;
-  text-indent: 110%;
-  white-space: nowrap;
-  background-image: url(//instagramstatic-a.akamaihd.net/h1/sprites/core-sprites-cd6d7d.png);
-  background-repeat: no-repeat;
-  background-position: 0px -322px;
-  height: 49px;
-  width: 171px;
-}
+// .login-form {
+//   -webkit-box-flex: 1;
+//   -webkit-flex-grow: 1;
+//   -ms-flex-positive: 1;
+//   flex-grow: 1;
+//     -webkit-box-pack: center;
+//     -webkit-justify-content: center;
+//     -ms-flex-pack: center;
+//   justify-content: center;
+//   max-width: 350px;
+//   height: 464px;
+//   float: right;
+//   position: relative;
+//   margin-right: 118px;
+//   margin-top: -508px;
+// }
+//
+// .login-container {
+//   background-color: white;
+//   border: 1px solid #edeeee;
+//   border-radius: 1px;
+//   margin: 0 0 10px;
+//   padding: 10px 0;
+// }
 
-.login-fields {
-  margin-bottom: 10px;
-}
+// .login-instagram-logo {
+//   margin: 20px auto 10px;
+//   display: block;
+//   overflow: hidden;
+//   text-indent: 110%;
+//   white-space: nowrap;
+//   background-image: url(//instagramstatic-a.akamaihd.net/h1/sprites/core-sprites-cd6d7d.png);
+//   background-repeat: no-repeat;
+//   background-position: 0px -322px;
+//   height: 49px;
+//   width: 171px;
+// }
 
-.login-text-field {
-  margin: 0 40px 6px;
-  position: relative;
-}
+// .login-fields {
+//   margin-bottom: 10px;
+// }
 
-.email-text-field, .password-text-field, #passwordconf-text-field {
-  background-color: #fdfdfd;
-  border: 1px solid #edeeee;
-  border-radius: 3px;
-  font-size: 13px;
-  padding: 9px 8px 7px;
-  -webkit-appearance: none;
-  font-family: 'proxima-nova', 'Helvetica Neue', Arial, Helvetica, sans-serif;
-  height: 32px;
-  width: 250px;
-}
+// .login-text-field {
+//   margin: 0 40px 6px;
+//   position: relative;
+// }
 
-.remember-me {
-  font-family: 'proxima-nova', 'Helvetica Neue', Arial, Helvetica, sans-serif;
-  font-size: 13px;
-  color: #125688;
-}
+// .email-text-field, .password-text-field, #passwordconf-text-field {
+//   background-color: #fdfdfd;
+//   border: 1px solid #edeeee;
+//   border-radius: 3px;
+//   font-size: 13px;
+//   padding: 9px 8px 7px;
+//   -webkit-appearance: none;
+//   font-family: 'proxima-nova', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+//   height: 32px;
+//   width: 250px;
+// }
 
-.forgot-password {
-  align-items: center;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -ms-flex-align: center;
-  flex-direction: row;
-  height: 100%;
-  position: absolute;
-  right: 8px;
-  top: 5px;
-}
+// .remember-me {
+//   font-family: 'proxima-nova', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+//   font-size: 13px;
+//   color: #125688;
+// }
 
-.forgot-password-link {
-  color: #125688;
-  text-decoration: none;
-  font-size: 13px;
-  margin-right: 4px;
-}
+// .forgot-password {
+//   align-items: center;
+//   -webkit-box-align: center;
+//   -webkit-align-items: center;
+//   -ms-flex-align: center;
+//   flex-direction: row;
+//   height: 100%;
+//   position: absolute;
+//   right: 8px;
+//   top: 5px;
+// }
 
-.forgot-password-link:hover {
-  text-decoration: none;
-}
+// .forgot-password-link {
+//   color: #125688;
+//   text-decoration: none;
+//   font-size: 13px;
+//   margin-right: 4px;
+// }
 
-.login-button {
-  width: 250px;
-  margin: 4px 40px 14px;
-  line-height: 29px;
-  padding: 0 11px;
-  cursor: pointer;
-  background-color: #4090db;
-  border-color: #4090db;
-  color: white;
-  border-radius: 3px;
-  border-style: solid;
-  border-width: 1px;
-  font-size: 13px;
-  font-weight: 400;
-  outline: none;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-    -webkit-appearance: none;
-  font-family: 'proxima-nova', 'Helvetica Neue', Arial, Helvetica, sans-serif;
-}
+// .forgot-password-link:hover {
+//   text-decoration: none;
+// }
 
-.login-button:hover {
-  background-color: #125688;
-}
+// .login-button {
+//   width: 250px;
+//   margin: 4px 40px 14px;
+//   line-height: 29px;
+//   padding: 0 11px;
+//   cursor: pointer;
+//   background-color: #4090db;
+//   border-color: #4090db;
+//   color: white;
+//   border-radius: 3px;
+//   border-style: solid;
+//   border-width: 1px;
+//   font-size: 13px;
+//   font-weight: 400;
+//   outline: none;
+//   overflow: hidden;
+//   text-overflow: ellipsis;
+//   white-space: nowrap;
+//     -webkit-appearance: none;
+//   font-family: 'proxima-nova', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+// }
 
-.no-account {
-  margin-top: 10px;
-}
+// .login-button:hover {
+//   background-color: #125688;
+// }
 
-.no-account-text {
-  color: #4b4f54;
-  font-size: 13px;
-  line-height: 18px;
-  margin: 10px 20px 10px 20px;
-  text-align: center;
-}
+// .no-account {
+//   margin-top: 10px;
+// }
+//
+// .no-account-text {
+//   color: #4b4f54;
+//   font-size: 13px;
+//   line-height: 18px;
+//   margin: 10px 20px 10px 20px;
+//   text-align: center;
+// }
 
-.sign-up-button {
-  width: 250px;
-  margin: 4px 40px 14px;
-  line-height: 29px;
-  padding: 0 11px;
-  cursor: pointer;
-  background-color: #125688;
-  border-color: #125688;
-  color: white;
-  border-radius: 3px;
-  border-style: solid;
-  border-width: 1px;
-  font-size: 13px;
-  font-weight: 400;
-  outline: none;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-    -webkit-appearance: none;
-  font-family: 'proxima-nova', 'Helvetica Neue', Arial, Helvetica, sans-serif;
-}
+// .sign-up-button {
+//   width: 250px;
+//   margin: 4px 40px 14px;
+//   line-height: 29px;
+//   padding: 0 11px;
+//   cursor: pointer;
+//   background-color: #125688;
+//   border-color: #125688;
+//   color: white;
+//   border-radius: 3px;
+//   border-style: solid;
+//   border-width: 1px;
+//   font-size: 13px;
+//   font-weight: 400;
+//   outline: none;
+//   overflow: hidden;
+//   text-overflow: ellipsis;
+//   white-space: nowrap;
+//     -webkit-appearance: none;
+//   font-family: 'proxima-nova', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+// }
 
-.sign-up-button:hover {
-  background-color: #4090db;
-}
+// .sign-up-button:hover {
+//   background-color: #4090db;
+// }
 
-.sign-up-links {
-  color: white;
-  text-decoration: none;
-}
+// .sign-up-links {
+//   color: white;
+//   text-decoration: none;
+// }
 
-.sign-up-links:hover {
-  color: white;
-  text-decoration: none;
-}
+// .sign-up-links:hover {
+//   color: white;
+//   text-decoration: none;
+// }
 
-.iphone-section {
-  align-self: center;
-  background: url("//instagramstatic-a.akamaihd.net/h1/images/homepage/home-phones.png/26f8f9119be7.png");
-  flex-basis: 454px;
-  height: 618px;
-  width: 395px;
-  margin-left: 59px;
-}
+// .main-sign-up {
+//   background-color: #4090db;
+// }
 
-.iphone-image {
-  height: 422px;
-  margin-left: 135px;
-  margin-top: 97px;
-}
-
-.main-sign-up {
-  background-color: #4090db;
-}
-
-.profile-image-label {
-  font-size: 13px;
-  padding-left: 9px;
-  padding-top: 8px;
-  color: #125688;
-}
+// .profile-image-label {
+//   font-size: 13px;
+//   padding-left: 9px;
+//   padding-top: 8px;
+//   color: #125688;
+// }
 
 .posts-section {
   padding-top: 60px;
