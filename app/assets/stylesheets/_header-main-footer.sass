@@ -1,0 +1,54 @@
+header
+  height: 46px
+  background-color: white !important
+  text-align: center
+  color: $primary-color
+  font-weight: bold
+  font-size: 11px
+  font-family: $primary-font-family
+  text-transform: uppercase
+  padding: 13px
+  border: 1px solid #edeeee
+
+main
+  background-color: #fafafa
+
+footer
+  @extend header
+
+  a
+    color: $primary-color
+
+.wrapper
+  height: 100%
+  display: flex
+  flex-direction: column
+
+.custom-navbar
+  +height-width(31px, 100%)
+  max-width: 600px
+  margin: 0 auto
+  -webkit-box-orient: horizontal
+  -webkit-box-direction: normal
+  -ms-flex-direction: row
+  flex-direction: row
+
+.new-post-link
+  color: $primary-color
+  float: left
+  padding-top: 3px
+
+.header-instagram-logo
+  +brand-logo
+  +height-width(28px, 102px)
+  left: -33px
+  margin: auto
+  position: relative
+  background-position: -344px -284px
+
+.current-username
+  float: right
+  margin-top: -25px
+
+.sign-out-link
+  color: $primary-color
