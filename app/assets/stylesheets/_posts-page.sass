@@ -1,0 +1,164 @@
+.posts-section
+  padding-top: 60px
+  -webkit-flex-grow: 1
+  -ms-flex-positive: 1
+  flex-grow: 1
+  margin: 0 auto
+  max-width: 600px
+  width: 100%
+
+.posts-div
+  margin-bottom: 30px
+
+.each-post
+  background-color: white
+  border: 1px solid #edeeee
+  border-radius: 3px
+  margin-bottom: 60px
+  margin-left: -1px
+  margin-right: -1px
+  padding-bottom: 30px
+
+.post-header
+  height: 64px
+  padding: 14px 20px
+
+.post-user-image
+  +height-width(30px, 30px)
+  flex-basis: 30px
+  margin: -2px 530px -22px -5px
+  flex-shrink: 0
+  background-color: #fbfbfb
+  border: 1px solid #cccfd0
+  border-radius: 50%
+  box-sizing: border-box
+  overflow: hidden
+
+.post-user-username
+  +height-width(18px, 249px)
+  margin-left: -53px
+  margin-top: -5px
+  font-size: 12px
+
+.post-timestamp
+  color: #a5a7aa
+  font-size: 12px
+  font-weight: 500
+  float: right
+  margin-top: -18px
+
+.post-image-div
+  +height-width(550px, 600px)
+  box-shadow: inset 0px 0px 20px 0px #edeeee
+  background-color: #edeeee9
+
+.post-image
+  +height-width(100%, 100%)
+
+.post-extra-section
+  padding: 20px 24px
+  font-size: 15px
+  line-height: 18px
+
+.likes_count
+  font-weight: 500
+  color: #4b4f54
+
+.likes-word
+  @extend .likes_count
+
+.post-details
+  margin-left: -24px
+  margin-right: -24px
+  padding-left: 24px
+  padding-right: 24px
+  margin-top: 4px
+  padding-top: 5px
+  margin-bottom: 7px
+  list-style-type: none
+
+.post-user-and-title
+  margin-bottom: 7px
+  position: relative
+  word-wrap: break-word
+
+.post-detail-user-username
+  color: $primary-color
+  margin-right: 0.3em
+  font-size: 15px
+  line-height: 18px
+  font-weight: 600
+  overflow: hidden
+  text-overflow: ellipsis
+  white-space: nowrap
+
+.post-comment
+  margin-bottom: 7px
+  position: relative
+  word-wrap: break-word
+
+.comment-user-username
+  @extend .post-detail-user-username
+
+.add-comment-section
+  margin-top: 13px
+  min-height: 13px
+  -webkit-box-align: center
+  align-items: center
+  border-top: 1px solid #eeefef
+  -webkit-box-orient: horizontal
+  -webkit-box-direction: normal
+  -webkit-flex-direction: row
+  flex-direction: row
+  -webkit-box-pack: center
+  justify-content: center
+
+.likes-link
+  +brand-logo
+  +height-width(44px, 44px)
+  text-decoration: none
+  margin-left: -9px
+  margin-right: 3px
+  background-color: transparent
+  border: none
+  cursor: pointer
+  padding: 0
+  background-position: -173px -322px
+  position: relative
+
+.new-comment-form
+  color: #4b4f54
+
+#new-comment-text
+  font-size: 15px
+  line-height: 18px
+  background: none
+  border: none
+  outline: none
+  width: 80%
+  font-family: $primary-font-family
+  cursor: auto
+  padding: 1px
+  resize: none
+  margin-left: 36px
+  margin-top: -43px
+
+form#new_comment.new_comment
+  margin-top: -10px
+  max-height: 26px
+
+.submit-comment-button
+  width: 74px
+  margin: -27px 244px 14px
+  line-height: 29px
+  background-color: white
+  color: $primary-color
+  font-size: $primary-font-size
+  font-weight: 500
+  outline: none
+  overflow: hidden
+  text-overflow: ellipsis
+  white-space: nowrap
+  font-family: $primary-font-family
+  text-transform: uppercase
+  border: none

@@ -297,207 +297,207 @@
 //   color: #125688;
 // }
 
-.posts-section {
-  padding-top: 60px;
-  -webkit-flex-grow: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
-  margin: 0 auto;
-  max-width: 600px;
-  width: 100%;
-}
+// .posts-section {
+//   padding-top: 60px;
+//   -webkit-flex-grow: 1;
+//   -ms-flex-positive: 1;
+//   flex-grow: 1;
+//   margin: 0 auto;
+//   max-width: 600px;
+//   width: 100%;
+// }
 
-.posts-div {
-  margin-bottom: 30px;
-}
+// .posts-div {
+//   margin-bottom: 30px;
+// }
 
-.each-post {
-  background-color: white;
-  border: 1px solid #edeeee;
-  border-radius: 3px;
-  margin-bottom: 60px;
-  margin-left: -1px;
-  margin-right: -1px;
-  padding-bottom: 30px;
-}
+// .each-post {
+//   background-color: white;
+//   border: 1px solid #edeeee;
+//   border-radius: 3px;
+//   margin-bottom: 60px;
+//   margin-left: -1px;
+//   margin-right: -1px;
+//   padding-bottom: 30px;
+// }
 
-.post-header {
-  height: 64px;
-  padding: 14px 20px;
-}
+// .post-header {
+//   height: 64px;
+//   padding: 14px 20px;
+// }
 
-.post-user-image {
-  flex-basis: 30px;
-  margin: -2px 530px -22px -5px;
-  flex-shrink: 0;
-  background-color: #fbfbfb;
-  border: 1px solid #cccfd0;
-  border-radius: 50%;
-  box-sizing: border-box;
-  height: 30px;
-  overflow: hidden;
-  width: 30px;
-}
+// .post-user-image {
+//   flex-basis: 30px;
+//   margin: -2px 530px -22px -5px;
+//   flex-shrink: 0;
+//   background-color: #fbfbfb;
+//   border: 1px solid #cccfd0;
+//   border-radius: 50%;
+//   box-sizing: border-box;
+//   height: 30px;
+//   overflow: hidden;
+//   width: 30px;
+// }
 
-.post-user-username {
-  width: 249px;
-  height: 18px;
-  margin-left: -53px;
-  margin-top: -5px;
-  font-size: 12px;
-}
+// .post-user-username {
+//   width: 249px;
+//   height: 18px;
+//   margin-left: -53px;
+//   margin-top: -5px;
+//   font-size: 12px;
+// }
 
-.post-timestamp {
-  color: #a5a7aa;
-  font-size: 12px;
-  font-weight: 500;
-  float: right;
-  margin-top: -18px;
-}
+// .post-timestamp {
+//   color: #a5a7aa;
+//   font-size: 12px;
+//   font-weight: 500;
+//   float: right;
+//   margin-top: -18px;
+// }
+//
+// .post-image-div {
+//   box-shadow: inset 0px 0px 20px 0px #edeeee;
+//   background-color: #edeeee;
+//   width: 600px;
+//   height: 550px;
+// }
 
-.post-image-div {
-  box-shadow: inset 0px 0px 20px 0px #edeeee;
-  background-color: #edeeee;
-  width: 600px;
-  height: 550px;
-}
+// .post-image {
+//   width: 100%;
+//   height: 100%;
+// }
 
-.post-image {
-  width: 100%;
-  height: 100%;
-}
+// .post-extra-section {
+//   padding: 20px 24px;
+//   font-size: 15px;
+//   line-height: 18px;
+// }
 
-.post-extra-section {
-  padding: 20px 24px;
-  font-size: 15px;
-  line-height: 18px;
-}
+// .likes_count, .likes-word {
+//   font-weight: 500;
+//   color: #4b4f54;
+// }
 
-.likes_count, .likes-word {
-  font-weight: 500;
-  color: #4b4f54;
-}
+// .post-details {
+//   margin-left: -24px;
+//   margin-right: -24px;
+//   padding-left: 24px;
+//   padding-right: 24px;
+//   margin-top: 4px;
+//   padding-top: 5px;
+//   margin-bottom: 7px;
+//   list-style-type: none;
+// }
 
-.post-details {
-  margin-left: -24px;
-  margin-right: -24px;
-  padding-left: 24px;
-  padding-right: 24px;
-  margin-top: 4px;
-  padding-top: 5px;
-  margin-bottom: 7px;
-  list-style-type: none;
-}
+// .post-user-and-title {
+//   margin-bottom: 7px;
+//   position: relative;
+//   word-wrap: break-word;
+// }
 
-.post-user-and-title {
-  margin-bottom: 7px;
-  position: relative;
-  word-wrap: break-word;
-}
+// .post-detail-user-username {
+//   color: #125688;
+//   margin-right: 0.3em;
+//   font-size: 15px;
+//   line-height: 18px;
+//   font-weight: 600;
+//   overflow: hidden;
+//   text-overflow: ellipsis;
+//   white-space: nowrap;
+// }
 
-.post-detail-user-username {
-  color: #125688;
-  margin-right: 0.3em;
-  font-size: 15px;
-  line-height: 18px;
-  font-weight: 600;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-}
+// .post-comment {
+//   margin-bottom: 7px;
+//   position: relative;
+//   word-wrap: break-word;
+// }
 
-.post-comment {
-  margin-bottom: 7px;
-  position: relative;
-  word-wrap: break-word;
-}
+// .comment-user-username {
+//   color: #125688;
+//   margin-right: 0.3em;
+//   font-size: 15px;
+//   line-height: 18px;
+//   font-weight: 600;
+//   overflow: hidden;
+//   text-overflow: ellipsis;
+//   white-space: nowrap;
+// }
 
-.comment-user-username {
-  color: #125688;
-  margin-right: 0.3em;
-  font-size: 15px;
-  line-height: 18px;
-  font-weight: 600;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-}
+// .add-comment-section {
+//   margin-top: 13px;
+//   min-height: 13px;
+//   -webkit-box-align: center;
+//   align-items: center;
+//   border-top: 1px solid #eeefef;
+//   -webkit-box-orient: horizontal;
+//   -webkit-box-direction: normal;
+//   -webkit-flex-direction: row;
+//   flex-direction: row;
+//   -webkit-box-pack: center;
+//   justify-content: center;
+// }
 
-.add-comment-section {
-  margin-top: 13px;
-  min-height: 13px;
-  -webkit-box-align: center;
-  align-items: center;
-  border-top: 1px solid #eeefef;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: center;
-  justify-content: center;
-}
+// .likes-link {
+//   color: #125688;
+//   text-decoration: none;
+//   margin-left: -9px;
+//   margin-right: 3px;
+//   background-color: transparent;
+//   border: none;
+//   cursor: pointer;
+//   padding: 0;
+//   background-image: url(//instagramstatic-a.akamaihd.net/h1/sprites/core-sprites-cd6d7d.png);
+//   background-repeat: no-repeat;
+//   background-position: -173px -322px;
+//   height: 44px;
+//   width: 44px;
+//   display: block;
+//   overflow: hidden;
+//   text-indent: 110%;
+//   white-space: nowrap;
+//   position: relative;
+// }
 
-.likes-link {
-  color: #125688;
-  text-decoration: none;
-  margin-left: -9px;
-  margin-right: 3px;
-  background-color: transparent;
-  border: none;
-  cursor: pointer;
-  padding: 0;
-  background-image: url(//instagramstatic-a.akamaihd.net/h1/sprites/core-sprites-cd6d7d.png);
-  background-repeat: no-repeat;
-  background-position: -173px -322px;
-  height: 44px;
-  width: 44px;
-  display: block;
-  overflow: hidden;
-  text-indent: 110%;
-  white-space: nowrap;
-  position: relative;
-}
+// .new-comment-form {
+//   color: #4b4f54;
+// }
 
-.new-comment-form {
-  color: #4b4f54;
-}
+// #new-comment-text {
+//   font-size: 15px;
+//   line-height: 18px;
+//   background: none;
+//   border: none;
+//   outline: none;
+//   width: 80%;
+//   font-family: 'proxima-nova', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+//   cursor: auto;
+//   padding: 1px;
+//   resize: none;
+//   margin-left: 36px;
+//   margin-top: -43px;
+// }
 
-#new-comment-text {
-  font-size: 15px;
-  line-height: 18px;
-  background: none;
-  border: none;
-  outline: none;
-  width: 80%;
-  font-family: 'proxima-nova', 'Helvetica Neue', Arial, Helvetica, sans-serif;
-  cursor: auto;
-  padding: 1px;
-  resize: none;
-  margin-left: 36px;
-  margin-top: -43px;
-}
+// form#new_comment.new_comment {
+//   margin-top: -8px;
+//   max-height: 26px;
+// }
 
-form#new_comment.new_comment {
-  margin-top: -8px;
-  max-height: 26px;
-}
-
-.submit-comment-button {
-  width: 74px;
-  margin: -27px 244px 14px;
-  line-height: 29px;
-  background-color: white;
-  color: #125688;
-  font-size: 13px;
-  font-weight: 500;
-  outline: none;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  font-family: 'proxima-nova', 'Helvetica Neue', Arial, Helvetica, sans-serif;
-  text-transform: uppercase;
-  border: none;
-}
+// .submit-comment-button {
+//   width: 74px;
+//   margin: -27px 244px 14px;
+//   line-height: 29px;
+//   background-color: white;
+//   color: #125688;
+//   font-size: 13px;
+//   font-weight: 500;
+//   outline: none;
+//   overflow: hidden;
+//   text-overflow: ellipsis;
+//   white-space: nowrap;
+//   font-family: 'proxima-nova', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+//   text-transform: uppercase;
+//   border: none;
+// }
 
 .new-post-section {
   -webkit-box-orient: horizontal;
